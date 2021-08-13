@@ -61,6 +61,7 @@
 
         form{
             input{
+                padding: 0 16px;
                 height: 50px;
                 border-radius: 8px;
                 background: #fff;
@@ -85,9 +86,15 @@
         }
         
         p{
+            
             font-size: 14px;
             color: #737380;
             margin-top: 16px;
+        }
+
+        a{
+            padding: 0 5px;
+            color:#e559f9
         }
 
         .create-room{
