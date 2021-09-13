@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { FormEvent, useState } from 'react';
 
 import { Button } from '../components/Button';
@@ -12,23 +12,28 @@ import { useAuth } from '../hooks/useAuth';
 export function NewRoom(){
 
     const { user } = useAuth();
-
+    const history = useHistory()
     const [newRoom, setNewRoom] = useState('');
 
-    async function handleCreateRoom(event:FormEvent) {
+    async function handleCreateRoom(event: FormEvent) {
+        
+        //Não redireciona ao clicar no button, que seria o evento padrão de um form 
         event.preventDefault();
 
+        //Verificando se algo foi digitado no input
         if(newRoom.trim() === ''){
-            return
+            return;
         }
 
         const roomRef = database.ref('rooms');
 
-        const fibrebaseRoom = await roomRef.push({
+        const firebaseRoom = await roomRef.push({
             title: newRoom,
             authorId: user?.id,
         })
 
+        const RoomId = firebaseRoom.key;
+        history.push('/rooms/'+ RoomId);
 
     }
 
