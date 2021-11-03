@@ -14,6 +14,14 @@
             > img{
                 max-width: 800px;
             }
+            > div{
+                display: flex;
+                gap: 16px;
+
+                button{
+                     height: 40px;
+                }
+            }
         }
     }
 
