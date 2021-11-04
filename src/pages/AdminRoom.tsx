@@ -1,11 +1,9 @@
-import { FormEvent, useState } from 'react';
+
 import { useParams } from 'react-router';
 import logoImg from '../assets/images/logo.svg';
 import { Button } from '../components/Button';
 import { RoomCode } from '../components/RoomCode';
-import '../styles/room.scss'
-import { useAuth } from '../hooks/useAuth';
-import { database } from '../services/firebase';
+import '../styles/room.scss';
 import { Question} from '../components/Question';
 import { useRoom } from '../hooks/useRoom';
 
