@@ -2,10 +2,6 @@
 Letmeask é uma aplicação React para perguntas, criado durante o NLW Together
 
 
-<h1 align="center">
-  <img alt="move.it" title="move.it" src=".github/logo.png" />
-</h1>
-
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -14,15 +10,11 @@ Letmeask é uma aplicação React para perguntas, criado durante o NLW Together
 
 </p>
 
-<p align="center">
+
  ![letmeask](https://user-images.githubusercontent.com/42773401/142557372-c021eef3-6197-4abc-bc5f-f988b66cedb8.png)
-</p>
+
 
 <br>
-
-<p align="center">
-  <img alt="Happy" src=".github/moveit.png" width="100%">
-</p>
 
 ## ✨ Tecnologias
 
